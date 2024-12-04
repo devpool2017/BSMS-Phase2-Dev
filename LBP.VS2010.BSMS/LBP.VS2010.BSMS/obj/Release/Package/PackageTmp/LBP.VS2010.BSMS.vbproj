@@ -1,0 +1,2122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{646710A5-CE2C-4FA5-B5E9-5E3A42521BED}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LBP.VS2010.BSMS</RootNamespace>
+    <AssemblyName>LBP.VS2010.BSMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>LBP.VS2010.BSMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>LBP.VS2010.BSMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LBP.VS2010.CHKDIGIT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\LBP.VS2010.CHKDIGIT.dll</HintPath>
+    </Reference>
+    <Reference Include="LBP.VS2010.LBPCryptography">
+      <HintPath>..\dll\LBP.VS2010.LBPCryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="LBP.VS2010.WebCryptor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\LBP.VS2010.WebCryptor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\LBP.VS2010.WebCryptor.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Microsoft.ReportViewer.WebForms.DLL" />
+    <Content Include="Content\Scripts\Commons\AJAXPager.js" />
+    <Content Include="Content\Scripts\Commons\bootbox.min.js" />
+    <Content Include="Content\Scripts\Commons\BrowserChecker.js" />
+    <Content Include="Content\Scripts\Commons\Error.js" />
+    <Content Include="Content\Scripts\Commons\LBP.Commons.js" />
+    <Content Include="Content\Scripts\Commons\LBP.Controls.js" />
+    <Content Include="Content\Scripts\Commons\LBP.ControlsAccess.js" />
+    <Content Include="Content\Scripts\Commons\LBP.Events.js" />
+    <Content Include="Content\Scripts\Commons\noback.js" />
+    <Content Include="Content\Scripts\Commons\nodoubleclick.js" />
+    <Content Include="Content\Scripts\Commons\secure-storage.js" />
+    <Content Include="Content\Scripts\Commons\SecureStorage.js" />
+    <Content Include="Content\Scripts\Commons\SessionTimeout.js" />
+    <Content Include="Content\Scripts\Commons\Timeout.js" />
+    <Content Include="Content\Scripts\jquery\jquery-3.6.0.min.js" />
+    <Content Include="Content\Scripts\jquery\jquery-ui.min.js" />
+    <Content Include="Content\Scripts\jquery\jquery.fileupload.js" />
+    <Content Include="Content\Scripts\jquery\jquery.iframe-transport.js" />
+    <Content Include="Content\Scripts\PageScripts\AdminTools\DatabaseAuditLog.js" />
+    <Content Include="Content\Scripts\PageScripts\AdminTools\Login.js" />
+    <Content Include="Content\Scripts\PageScripts\AdminTools\Role.js" />
+    <Content Include="Content\Scripts\PageScripts\AdminTools\RoleDetails.js" />
+    <Content Include="Content\Scripts\PageScripts\AdminTools\Users.js" />
+    <Content Include="Content\Scripts\PageScripts\AdminTools\UsersActivityLog.js" />
+    <Content Include="Content\Scripts\PageScripts\AdminTools\UserTarget.js" />
+    <Content Include="Content\Scripts\PageScripts\CPA\ChangeInPotentialAccounts.js" />
+    <Content Include="Content\Scripts\PageScripts\CPA\Encoding.js" />
+    <Content Include="Content\Scripts\PageScripts\CPA\EncodingDates.js" />
+    <Content Include="Content\Scripts\PageScripts\CPA\Revisits.js" />
+    <Content Include="Content\Scripts\PageScripts\CPA\SummaryPerBM.js" />
+    <Content Include="Content\Scripts\PageScripts\CPA\SummaryPerBMAnnual.js" />
+    <Content Include="Content\Scripts\PageScripts\CPA\SummaryPerGroupBranch.js" />
+    <Content Include="Content\Scripts\PageScripts\CPA\WeeklyActivity.js" />
+    <Content Include="Content\Scripts\PageScripts\CPA\WeeklyActivityView.js" />
+    <Content Include="Content\Scripts\PageScripts\Reports\ConversionSummaryReport\AnnuallySummaryReport.js" />
+    <Content Include="Content\Scripts\PageScripts\Reports\ConversionSummaryReport\MonthlySummaryReport.js" />
+    <Content Include="Content\Scripts\PageScripts\Reports\ConversionSummaryReport\WeeklySummaryReport.js" />
+    <Content Include="Content\Scripts\PageScripts\Reports\PotentialAccountReports\PotentialAccountReports.js" />
+    <Content Include="Content\Scripts\PageScripts\Reports\SummaryPerGroup\Annual.js" />
+    <Content Include="Content\Scripts\PageScripts\Reports\SummaryPerGroup\Monthly.js" />
+    <Content Include="Content\Scripts\PageScripts\Reports\SummaryPerGroup\Weekly.js" />
+    <Content Include="Content\Scripts\PageScripts\Review\BankProduct.js" />
+    <Content Include="Content\Scripts\PageScripts\Review\Branches.js" />
+    <Content Include="Content\Scripts\PageScripts\Review\BranchManager.js" />
+    <Content Include="Content\Scripts\PageScripts\Review\Dates.js" />
+    <Content Include="Content\Scripts\PageScripts\Review\GroupHeads.js" />
+    <Content Include="Content\Scripts\PageScripts\Review\Groups.js" />
+    <Content Include="Content\Scripts\PageScripts\Review\Industries.js" />
+    <Content Include="Content\Scripts\PageScripts\Review\OtherParameters.js" />
+    <Content Include="Content\Scripts\PageScripts\Review\OtherTables.js" />
+    <Content Include="Content\Scripts\PageScripts\TargetMarket\CreateNewClient.js" />
+    <Content Include="Content\Scripts\PageScripts\TargetMarket\SearchTargetMarket.js" />
+    <Content Include="Content\Scripts\PageScripts\TargetMarket\UpdateClient.js" />
+    <Content Include="Content\Scripts\PageScripts\TargetMarket\UpdateClientDetails.js" />
+    <Content Include="Content\Scripts\plugins\aes\aes.js" />
+    <Content Include="Content\Scripts\plugins\aes\aes2.js" />
+    <Content Include="Content\Scripts\plugins\datepicker\bootstrap-datepicker.js" />
+    <Content Include="Content\Scripts\plugins\editable-select\jquery-editable-select.js" />
+    <Content Include="Content\Scripts\plugins\editable-select\LBP.EditableSelect.js" />
+    <Content Include="Content\Scripts\plugins\file-input\bootstrap-file-input.js" />
+    <Content Include="Content\Scripts\plugins\mask\mask-input-plugin.js" />
+    <Content Include="Content\Scripts\plugins\passwordMeter\jquery.passtrength.js" />
+    <Content Include="Content\Scripts\plugins\passwordMeter\show-hide-password.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-grid.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-grid.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-grid.rtl.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-reboot.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-utilities.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-utilities.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap.rtl.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap.rtl.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\all.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\all.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\brands.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\brands.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\fontawesome.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\fontawesome.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\regular.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\regular.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\solid.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\solid.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\svg-with-js.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\svg-with-js.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\v4-shims.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\css\v4-shims.min.css" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\all.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\all.min.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\brands.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\brands.min.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\fontawesome.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\fontawesome.min.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\regular.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\regular.min.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\solid.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\solid.min.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\v4-shims.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\js\v4-shims.min.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\LICENSE.txt" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\sprites\brands.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\sprites\regular.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\sprites\solid.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\500px.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\accessible-icon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\accusoft.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\adn.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\adversal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\affiliatetheme.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\algolia.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\amazon-pay.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\amazon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\amilia.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\android.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\angellist.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\angrycreative.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\angular.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\app-store-ios.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\app-store.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\apper.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\apple-pay.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\apple.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\asymmetrik.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\audible.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\autoprefixer.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\avianex.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\aviato.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\aws.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\bandcamp.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\behance-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\behance.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\bimobject.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\bitbucket.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\bitcoin.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\bity.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\black-tie.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\blackberry.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\blogger-b.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\blogger.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\bluetooth-b.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\bluetooth.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\btc.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\buromobelexperte.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\buysellads.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cc-amazon-pay.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cc-amex.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cc-apple-pay.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cc-diners-club.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cc-discover.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cc-jcb.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cc-mastercard.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cc-paypal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cc-stripe.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cc-visa.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\centercode.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\chrome.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cloudscale.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cloudsmith.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cloudversify.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\codepen.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\codiepie.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\connectdevelop.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\contao.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cpanel.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-by.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-nc-eu.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-nc-jp.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-nc.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-nd.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-pd-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-pd.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-remix.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-sa.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-sampling-plus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-sampling.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons-share.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\creative-commons.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\css3-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\css3.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\cuttlefish.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\d-and-d.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\dashcube.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\delicious.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\deploydog.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\deskpro.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\deviantart.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\digg.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\digital-ocean.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\discord.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\discourse.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\dochub.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\docker.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\draft2digital.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\dribbble-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\dribbble.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\dropbox.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\drupal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\dyalog.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\earlybirds.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\ebay.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\edge.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\elementor.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\ello.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\ember.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\empire.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\envira.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\erlang.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\ethereum.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\etsy.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\expeditedssl.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\facebook-f.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\facebook-messenger.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\facebook-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\facebook.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\firefox.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\first-order-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\first-order.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\firstdraft.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\flickr.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\flipboard.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\fly.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\font-awesome-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\font-awesome-flag.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\font-awesome-logo-full.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\font-awesome.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\fonticons-fi.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\fonticons.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\fort-awesome-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\fort-awesome.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\forumbee.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\foursquare.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\free-code-camp.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\freebsd.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\fulcrum.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\galactic-republic.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\galactic-senate.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\get-pocket.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\gg-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\gg.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\git-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\git.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\github-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\github-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\github.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\gitkraken.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\gitlab.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\gitter.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\glide-g.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\glide.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\gofore.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\goodreads-g.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\goodreads.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\google-drive.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\google-play.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\google-plus-g.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\google-plus-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\google-plus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\google-wallet.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\google.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\gratipay.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\grav.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\gripfire.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\grunt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\gulp.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\hacker-news-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\hacker-news.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\hackerrank.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\hips.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\hire-a-helper.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\hooli.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\hornbill.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\hotjar.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\houzz.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\html5.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\hubspot.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\imdb.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\instagram.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\internet-explorer.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\ioxhost.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\itunes-note.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\itunes.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\java.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\jedi-order.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\jenkins.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\joget.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\joomla.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\js-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\js.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\jsfiddle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\kaggle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\keybase.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\keycdn.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\kickstarter-k.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\kickstarter.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\korvue.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\laravel.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\lastfm-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\lastfm.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\leanpub.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\less.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\line.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\linkedin-in.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\linkedin.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\linode.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\linux.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\lyft.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\magento.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\mailchimp.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\mandalorian.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\markdown.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\mastodon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\maxcdn.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\medapps.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\medium-m.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\medium.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\medrt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\meetup.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\megaport.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\microsoft.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\mix.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\mixcloud.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\mizuni.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\modx.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\monero.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\napster.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\neos.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\nimblr.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\nintendo-switch.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\node-js.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\node.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\npm.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\ns8.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\nutritionix.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\odnoklassniki-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\odnoklassniki.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\old-republic.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\opencart.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\openid.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\opera.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\optin-monster.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\osi.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\page4.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\pagelines.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\palfed.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\patreon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\paypal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\periscope.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\phabricator.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\phoenix-framework.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\phoenix-squadron.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\php.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\pied-piper-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\pied-piper-hat.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\pied-piper-pp.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\pied-piper.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\pinterest-p.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\pinterest-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\pinterest.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\playstation.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\product-hunt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\pushed.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\python.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\qq.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\quinscape.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\quora.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\r-project.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\ravelry.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\react.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\readme.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\rebel.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\red-river.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\reddit-alien.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\reddit-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\reddit.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\rendact.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\renren.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\replyd.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\researchgate.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\resolving.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\rev.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\rocketchat.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\rockrms.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\safari.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\sass.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\schlix.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\scribd.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\searchengin.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\sellcast.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\sellsy.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\servicestack.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\shirtsinbulk.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\shopware.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\simplybuilt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\sistrix.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\sith.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\skyatlas.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\skype.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\slack-hash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\slack.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\slideshare.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\snapchat-ghost.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\snapchat-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\snapchat.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\soundcloud.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\speakap.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\spotify.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\squarespace.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\stack-exchange.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\stack-overflow.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\staylinked.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\steam-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\steam-symbol.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\steam.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\sticker-mule.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\strava.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\stripe-s.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\stripe.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\studiovinari.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\stumbleupon-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\stumbleupon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\superpowers.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\supple.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\teamspeak.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\telegram-plane.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\telegram.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\tencent-weibo.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\themeco.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\themeisle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\trade-federation.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\trello.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\tripadvisor.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\tumblr-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\tumblr.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\twitch.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\twitter-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\twitter.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\typo3.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\uber.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\uikit.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\uniregistry.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\untappd.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\usb.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\ussunnah.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\vaadin.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\viacoin.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\viadeo-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\viadeo.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\viber.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\vimeo-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\vimeo-v.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\vimeo.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\vine.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\vk.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\vnv.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\vuejs.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\weebly.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\weibo.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\weixin.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\whatsapp-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\whatsapp.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\whmcs.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\wikipedia-w.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\windows.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\wix.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\wolf-pack-battalion.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\wordpress-simple.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\wordpress.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\wpbeginner.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\wpexplorer.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\wpforms.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\xbox.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\xing-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\xing.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\y-combinator.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\yahoo.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\yandex-international.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\yandex.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\yelp.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\yoast.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\youtube-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\youtube.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\brands\zhihu.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\address-book.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\address-card.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\angry.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\arrow-alt-circle-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\arrow-alt-circle-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\arrow-alt-circle-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\arrow-alt-circle-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\bell-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\bell.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\bookmark.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\building.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\calendar-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\calendar-check.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\calendar-minus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\calendar-plus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\calendar-times.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\calendar.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\caret-square-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\caret-square-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\caret-square-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\caret-square-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\chart-bar.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\check-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\check-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\clipboard.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\clock.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\clone.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\closed-captioning.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\comment-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\comment-dots.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\comment.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\comments.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\compass.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\copy.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\copyright.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\credit-card.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\dizzy.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\dot-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\edit.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\envelope-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\envelope.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\eye-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\eye.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file-archive.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file-audio.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file-code.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file-excel.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file-image.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file-pdf.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file-powerpoint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file-video.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file-word.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\file.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\flag.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\flushed.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\folder-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\folder.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\font-awesome-logo-full.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\frown-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\frown.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\futbol.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\gem.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grimace.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-beam-sweat.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-beam.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-hearts.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-squint-tears.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-squint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-stars.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-tears.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-tongue-squint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-tongue-wink.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-tongue.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin-wink.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\grin.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-lizard.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-paper.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-peace.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-point-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-point-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-point-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-point-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-pointer.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-rock.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-scissors.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hand-spock.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\handshake.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hdd.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\heart.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hospital.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\hourglass.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\id-badge.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\id-card.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\image.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\images.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\keyboard.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\kiss-beam.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\kiss-wink-heart.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\kiss.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\laugh-beam.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\laugh-squint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\laugh-wink.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\laugh.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\lemon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\life-ring.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\lightbulb.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\list-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\map.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\meh-blank.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\meh-rolling-eyes.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\meh.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\minus-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\money-bill-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\moon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\newspaper.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\object-group.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\object-ungroup.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\paper-plane.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\pause-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\play-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\plus-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\question-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\registered.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\sad-cry.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\sad-tear.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\save.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\share-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\smile-beam.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\smile-wink.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\smile.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\snowflake.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\star-half.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\star.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\sticky-note.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\stop-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\sun.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\surprise.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\thumbs-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\thumbs-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\times-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\tired.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\trash-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\user-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\user.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\window-close.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\window-maximize.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\window-minimize.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\regular\window-restore.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\address-book.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\address-card.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\adjust.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\air-freshener.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\align-center.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\align-justify.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\align-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\align-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\allergies.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ambulance.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\american-sign-language-interpreting.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\anchor.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\angle-double-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\angle-double-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\angle-double-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\angle-double-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\angle-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\angle-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\angle-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\angle-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\angry.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\apple-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\archive.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\archway.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-alt-circle-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-alt-circle-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-alt-circle-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-alt-circle-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-circle-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-circle-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-circle-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-circle-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrow-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrows-alt-h.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrows-alt-v.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\arrows-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\assistive-listening-systems.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\asterisk.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\at.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\atlas.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\atom.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\audio-description.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\award.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\backspace.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\backward.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\balance-scale.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ban.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\band-aid.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\barcode.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bars.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\baseball-ball.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\basketball-ball.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bath.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\battery-empty.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\battery-full.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\battery-half.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\battery-quarter.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\battery-three-quarters.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bed.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\beer.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bell-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bell.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bezier-curve.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bicycle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\binoculars.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\birthday-cake.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\blender.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\blind.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bold.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bolt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bomb.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bone.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bong.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\book-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\book-reader.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\book.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bookmark.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bowling-ball.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\box-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\box.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\boxes.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\braille.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\brain.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\briefcase-medical.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\briefcase.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\broadcast-tower.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\broom.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\brush.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bug.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\building.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bullhorn.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bullseye.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\burn.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bus-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\bus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\calculator.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\calendar-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\calendar-check.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\calendar-minus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\calendar-plus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\calendar-times.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\calendar.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\camera-retro.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\camera.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cannabis.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\capsules.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\car-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\car-battery.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\car-crash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\car-side.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\car.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\caret-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\caret-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\caret-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\caret-square-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\caret-square-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\caret-square-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\caret-square-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\caret-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cart-arrow-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cart-plus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\certificate.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chalkboard-teacher.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chalkboard.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\charging-station.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chart-area.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chart-bar.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chart-line.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chart-pie.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\check-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\check-double.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\check-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\check.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chess-bishop.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chess-board.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chess-king.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chess-knight.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chess-pawn.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chess-queen.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chess-rook.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chess.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chevron-circle-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chevron-circle-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chevron-circle-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chevron-circle-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chevron-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chevron-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chevron-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\chevron-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\child.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\church.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\circle-notch.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\clipboard-check.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\clipboard-list.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\clipboard.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\clock.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\clone.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\closed-captioning.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cloud-download-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cloud-upload-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cloud.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cocktail.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\code-branch.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\code.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\coffee.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cog.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cogs.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\coins.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\columns.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\comment-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\comment-dots.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\comment-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\comment.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\comments.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\compact-disc.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\compass.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\compress.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\concierge-bell.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cookie-bite.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cookie.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\copy.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\copyright.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\couch.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\credit-card.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\crop-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\crop.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\crosshairs.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\crow.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\crown.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cube.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cubes.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\cut.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\database.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\deaf.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\desktop.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\diagnoses.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dice-five.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dice-four.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dice-one.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dice-six.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dice-three.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dice-two.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dice.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\digital-tachograph.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\directions.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\divide.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dizzy.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dna.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dollar-sign.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dolly-flatbed.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dolly.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\donate.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\door-closed.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\door-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dot-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dove.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\download.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\drafting-compass.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\draw-polygon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\drum-steelpan.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\drum.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\dumbbell.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\edit.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\eject.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ellipsis-h.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ellipsis-v.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\envelope-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\envelope-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\envelope.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\equals.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\eraser.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\euro-sign.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\exchange-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\exclamation-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\exclamation-triangle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\exclamation.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\expand-arrows-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\expand.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\external-link-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\external-link-square-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\eye-dropper.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\eye-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\eye.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\fast-backward.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\fast-forward.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\fax.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\feather-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\feather.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\female.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\fighter-jet.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-archive.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-audio.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-code.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-contract.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-download.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-excel.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-export.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-image.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-import.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-invoice-dollar.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-invoice.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-medical-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-medical.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-pdf.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-powerpoint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-prescription.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-signature.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-upload.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-video.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file-word.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\file.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\fill-drip.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\fill.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\film.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\filter.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\fingerprint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\fire-extinguisher.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\fire.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\first-aid.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\fish.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\flag-checkered.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\flag.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\flask.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\flushed.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\folder-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\folder.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\font-awesome-logo-full.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\font.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\football-ball.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\forward.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\frog.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\frown-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\frown.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\futbol.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\gamepad.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\gas-pump.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\gavel.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\gem.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\genderless.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\gift.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\glass-martini-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\glass-martini.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\glasses.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\globe-africa.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\globe-americas.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\globe-asia.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\globe.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\golf-ball.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\graduation-cap.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\greater-than-equal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\greater-than.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grimace.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-beam-sweat.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-beam.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-hearts.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-squint-tears.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-squint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-stars.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-tears.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-tongue-squint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-tongue-wink.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-tongue.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin-wink.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grin.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grip-horizontal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\grip-vertical.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\h-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-holding-heart.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-holding-usd.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-holding.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-lizard.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-paper.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-peace.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-point-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-point-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-point-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-point-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-pointer.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-rock.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-scissors.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hand-spock.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hands-helping.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hands.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\handshake.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hashtag.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hdd.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\heading.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\headphones-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\headphones.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\headset.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\heart.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\heartbeat.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\helicopter.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\highlighter.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\history.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hockey-puck.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\home.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hospital-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hospital-symbol.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hospital.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hot-tub.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hotel.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hourglass-end.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hourglass-half.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hourglass-start.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\hourglass.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\i-cursor.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\id-badge.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\id-card-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\id-card.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\image.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\images.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\inbox.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\indent.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\industry.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\infinity.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\info-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\info.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\italic.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\joint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\key.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\keyboard.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\kiss-beam.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\kiss-wink-heart.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\kiss.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\kiwi-bird.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\language.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\laptop-code.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\laptop.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\laugh-beam.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\laugh-squint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\laugh-wink.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\laugh.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\layer-group.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\leaf.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\lemon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\less-than-equal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\less-than.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\level-down-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\level-up-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\life-ring.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\lightbulb.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\link.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\lira-sign.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\list-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\list-ol.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\list-ul.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\list.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\location-arrow.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\lock-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\lock.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\long-arrow-alt-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\long-arrow-alt-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\long-arrow-alt-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\long-arrow-alt-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\low-vision.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\luggage-cart.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\magic.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\magnet.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\male.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\map-marked-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\map-marked.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\map-marker-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\map-marker.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\map-pin.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\map-signs.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\map.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\marker.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\mars-double.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\mars-stroke-h.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\mars-stroke-v.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\mars-stroke.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\mars.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\medal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\medkit.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\meh-blank.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\meh-rolling-eyes.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\meh.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\memory.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\mercury.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\microchip.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\microphone-alt-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\microphone-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\microphone-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\microphone.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\microscope.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\minus-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\minus-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\minus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\mobile-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\mobile.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\money-bill-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\money-bill-wave-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\money-bill-wave.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\money-bill.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\money-check-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\money-check.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\monument.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\moon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\mortar-pestle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\motorcycle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\mouse-pointer.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\music.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\neuter.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\newspaper.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\not-equal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\notes-medical.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\object-group.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\object-ungroup.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\oil-can.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\outdent.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\paint-brush.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\paint-roller.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\palette.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pallet.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\paper-plane.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\paperclip.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\parachute-box.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\paragraph.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\parking.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\passport.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\paste.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pause-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pause.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\paw.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pen-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pen-fancy.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pen-nib.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pen-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pen.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pencil-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pencil-ruler.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\people-carry.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\percent.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\percentage.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\phone-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\phone-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\phone-volume.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\phone.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\piggy-bank.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pills.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\plane-arrival.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\plane-departure.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\plane.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\play-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\play.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\plug.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\plus-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\plus-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\plus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\podcast.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\poo.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\poop.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\portrait.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\pound-sign.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\power-off.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\prescription-bottle-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\prescription-bottle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\prescription.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\print.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\procedures.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\project-diagram.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\puzzle-piece.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\qrcode.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\question-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\question.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\quidditch.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\quote-left.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\quote-right.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\random.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\receipt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\recycle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\redo-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\redo.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\registered.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\reply-all.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\reply.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\retweet.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ribbon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\road.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\robot.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\rocket.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\route.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\rss-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\rss.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ruble-sign.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ruler-combined.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ruler-horizontal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ruler-vertical.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ruler.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\rupee-sign.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sad-cry.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sad-tear.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\save.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\school.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\screwdriver.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\search-minus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\search-plus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\search.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\seedling.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\server.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\shapes.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\share-alt-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\share-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\share-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\share.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\shekel-sign.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\shield-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ship.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\shipping-fast.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\shoe-prints.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\shopping-bag.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\shopping-basket.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\shopping-cart.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\shower.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\shuttle-van.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sign-in-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sign-language.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sign-out-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sign.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\signal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\signature.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sitemap.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\skull.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sliders-h.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\smile-beam.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\smile-wink.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\smile.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\smoking-ban.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\smoking.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\snowflake.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\solar-panel.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sort-alpha-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sort-alpha-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sort-amount-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sort-amount-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sort-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sort-numeric-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sort-numeric-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sort-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sort.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\spa.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\space-shuttle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\spinner.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\splotch.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\spray-can.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\square-full.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\stamp.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\star-half-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\star-half.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\star-of-life.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\star.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\step-backward.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\step-forward.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\stethoscope.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sticky-note.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\stop-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\stop.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\stopwatch.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\store-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\store.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\stream.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\street-view.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\strikethrough.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\stroopwafel.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\subscript.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\subway.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\suitcase-rolling.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\suitcase.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sun.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\superscript.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\surprise.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\swatchbook.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\swimmer.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\swimming-pool.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sync-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\sync.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\syringe.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\table-tennis.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\table.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tablet-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tablet.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tablets.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tachometer-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tag.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tags.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tape.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tasks.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\taxi.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\teeth-open.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\teeth.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\terminal.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\text-height.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\text-width.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\th-large.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\th-list.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\th.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\theater-masks.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\thermometer-empty.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\thermometer-full.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\thermometer-half.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\thermometer-quarter.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\thermometer-three-quarters.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\thermometer.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\thumbs-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\thumbs-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\thumbtack.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\ticket-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\times-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\times.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tint-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tint.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tired.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\toggle-off.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\toggle-on.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\toolbox.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tooth.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\trademark.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\traffic-light.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\train.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\transgender-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\transgender.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\trash-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\trash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tree.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\trophy.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\truck-loading.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\truck-monster.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\truck-moving.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\truck-pickup.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\truck.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tshirt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tty.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\tv.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\umbrella-beach.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\umbrella.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\underline.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\undo-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\undo.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\universal-access.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\university.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\unlink.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\unlock-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\unlock.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\upload.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-alt-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-astronaut.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-check.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-circle.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-clock.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-cog.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-edit.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-friends.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-graduate.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-lock.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-md.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-minus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-ninja.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-plus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-secret.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-shield.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-tag.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-tie.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user-times.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\user.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\users-cog.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\users.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\utensil-spoon.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\utensils.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\vector-square.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\venus-double.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\venus-mars.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\venus.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\vial.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\vials.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\video-slash.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\video.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\volleyball-ball.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\volume-down.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\volume-off.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\volume-up.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\walking.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\wallet.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\warehouse.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\weight-hanging.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\weight.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\wheelchair.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\wifi.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\window-close.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\window-maximize.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\window-minimize.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\window-restore.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\wine-glass-alt.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\wine-glass.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\won-sign.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\wrench.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\x-ray.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\svgs\solid\yen-sign.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.bundle.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.esm.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.esm.min.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.js" />
+    <Content Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.min.js" />
+    <Content Include="Content\Styles\Commons\Error.css" />
+    <Content Include="Content\Styles\Commons\jquery-ui.min.css" />
+    <Content Include="Content\Styles\Commons\LBP.css" />
+    <Content Include="Content\Styles\Commons\Login.css" />
+    <Content Include="Content\Styles\Commons\Site.css" />
+    <Content Include="Content\Styles\Commons\Welcome.css" />
+    <Content Include="Content\Styles\images\LBP_login.jpg" />
+    <Content Include="Content\Styles\images\LBP_loginchangepass.jpg" />
+    <Content Include="Content\Styles\images\spinner.gif" />
+    <Content Include="Content\Styles\images\favicon.ico" />
+    <Content Include="Content\Styles\images\LBP_login_base.jpg" />
+    <Content Include="Content\Styles\images\LBP_loginchangepass_base.jpg" />
+    <Content Include="Content\Styles\images\lbp_logo.png" />
+    <Content Include="Content\Styles\images\PIE.htc" />
+    <Content Include="Content\Styles\plugins\datepicker\datepicker.css" />
+    <Content Include="Content\Styles\plugins\editable-select\jquery-editable-select.css" />
+    <Content Include="Content\Styles\plugins\passwordMeter\passtrength.css" />
+    <Content Include="Content\Styles\plugins\selectboxit\jquery.selectBoxIt.css" />
+    <Content Include="Content\Styles\plugins\spin\spin.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\AdminTools\DatabaseAuditLog.aspx" />
+    <Content Include="Views\AdminTools\Role.aspx" />
+    <Content Include="Views\AdminTools\RoleDetails.aspx" />
+    <Content Include="Views\AdminTools\Users.aspx" />
+    <Content Include="Views\AdminTools\UsersActivityLog.aspx" />
+    <Content Include="Views\AdminTools\UserTarget.aspx" />
+    <Content Include="Views\ConversionSummary\AnnuallySummary.aspx" />
+    <Content Include="Views\ConversionSummary\MonthlySummary.aspx" />
+    <Content Include="Views\ConversionSummary\WeeklySummary.aspx" />
+    <Content Include="Views\ErrorPages\ExpiredSession.aspx" />
+    <Content Include="Views\ErrorPages\NoAccessPages.aspx" />
+    <Content Include="Views\ErrorPages\Oops.aspx" />
+    <Content Include="Views\Login\Login.aspx" />
+    <Content Include="Views\Login\Logout.aspx" />
+    <Content Include="Views\Login\Unlock.aspx" />
+    <Content Include="Views\Login\Welcome.aspx" />
+    <Content Include="Views\PotentialAccount\ChangeInPotentialAccounts.aspx" />
+    <Content Include="Views\PotentialAccount\Encoding.aspx" />
+    <Content Include="Views\PotentialAccount\EncodingDates.aspx" />
+    <Content Include="Views\PotentialAccount\PotentialAccountReports.aspx" />
+    <Content Include="Views\PotentialAccount\Revisits.aspx" />
+    <Content Include="Views\PotentialAccount\SummaryPerBM.aspx" />
+    <Content Include="Views\PotentialAccount\SummaryPerBMAnnual.aspx" />
+    <Content Include="Views\PotentialAccount\SummaryPerGroupBranch.aspx" />
+    <Content Include="Views\PotentialAccount\WeeklyActivity.aspx" />
+    <Content Include="Views\PotentialAccount\WeeklyActivityView.aspx" />
+    <Content Include="Views\Reports\ReportViewer.aspx" />
+    <Content Include="Views\Review\BankProduct.aspx" />
+    <Content Include="Views\Review\Branches.aspx" />
+    <Content Include="Views\Review\BranchManager.aspx" />
+    <Content Include="Views\Review\Dates.aspx" />
+    <Content Include="Views\Review\GroupHeads.aspx" />
+    <Content Include="Views\Review\Groups.aspx" />
+    <Content Include="Views\Review\Industries.aspx" />
+    <Content Include="Views\Review\OtherParameters.aspx" />
+    <Content Include="Views\Review\OtherTables.aspx" />
+    <Content Include="Views\Review\RelationshipOfficer.aspx" />
+    <Content Include="Views\SummaryPerRegion\Annual_YTD.aspx" />
+    <Content Include="Views\SummaryPerRegion\Monthly.aspx" />
+    <Content Include="Views\SummaryPerRegion\Weekly.aspx" />
+    <Content Include="Views\TargetMarket\CreateNewClient.aspx" />
+    <Content Include="Views\TargetMarket\SearchTargetMarket.aspx" />
+    <Content Include="Views\TargetMarket\UpdateClient.aspx" />
+    <Content Include="Views\TargetMarket\UpdateClientDetails.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Login.Master.designer.vb">
+      <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Login.Master.vb">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageUtils\OptimizedPage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Views\AdminTools\DatabaseAuditLog.aspx.designer.vb">
+      <DependentUpon>DatabaseAuditLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminTools\DatabaseAuditLog.aspx.vb">
+      <DependentUpon>DatabaseAuditLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AdminTools\Role.aspx.designer.vb">
+      <DependentUpon>Role.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminTools\Role.aspx.vb">
+      <DependentUpon>Role.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AdminTools\RoleDetails.aspx.designer.vb">
+      <DependentUpon>RoleDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminTools\RoleDetails.aspx.vb">
+      <DependentUpon>RoleDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AdminTools\Users.aspx.designer.vb">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminTools\Users.aspx.vb">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AdminTools\UsersActivityLog.aspx.designer.vb">
+      <DependentUpon>UsersActivityLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminTools\UsersActivityLog.aspx.vb">
+      <DependentUpon>UsersActivityLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AdminTools\UserTarget.aspx.designer.vb">
+      <DependentUpon>UserTarget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminTools\UserTarget.aspx.vb">
+      <DependentUpon>UserTarget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ConversionSummary\AnnuallySummary.aspx.designer.vb">
+      <DependentUpon>AnnuallySummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConversionSummary\AnnuallySummary.aspx.vb">
+      <DependentUpon>AnnuallySummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ConversionSummary\MonthlySummary.aspx.designer.vb">
+      <DependentUpon>MonthlySummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConversionSummary\MonthlySummary.aspx.vb">
+      <DependentUpon>MonthlySummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ConversionSummary\WeeklySummary.aspx.designer.vb">
+      <DependentUpon>WeeklySummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConversionSummary\WeeklySummary.aspx.vb">
+      <DependentUpon>WeeklySummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ErrorPages\ExpiredSession.aspx.designer.vb">
+      <DependentUpon>ExpiredSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorPages\ExpiredSession.aspx.vb">
+      <DependentUpon>ExpiredSession.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Views\ErrorPages\NoAccessPages.aspx.designer.vb">
+      <DependentUpon>NoAccessPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorPages\NoAccessPages.aspx.vb">
+      <DependentUpon>NoAccessPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ErrorPages\Oops.aspx.designer.vb">
+      <DependentUpon>Oops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorPages\Oops.aspx.vb">
+      <DependentUpon>Oops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login\Logout.aspx.designer.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\Logout.aspx.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login\Unlock.aspx.designer.vb">
+      <DependentUpon>Unlock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\Unlock.aspx.vb">
+      <DependentUpon>Unlock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login\Welcome.aspx.designer.vb">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\Welcome.aspx.vb">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\ChangeInPotentialAccounts.aspx.designer.vb">
+      <DependentUpon>ChangeInPotentialAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\ChangeInPotentialAccounts.aspx.vb">
+      <DependentUpon>ChangeInPotentialAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\Encoding.aspx.vb">
+      <DependentUpon>Encoding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\EncodingDates.aspx.vb">
+      <DependentUpon>EncodingDates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\PotentialAccountReports.aspx.vb">
+      <DependentUpon>PotentialAccountReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\Revisits.aspx.vb">
+      <DependentUpon>Revisits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\SummaryPerBM.aspx.designer.vb">
+      <DependentUpon>SummaryPerBM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\SummaryPerBM.aspx.vb">
+      <DependentUpon>SummaryPerBM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\SummaryPerBMAnnual.aspx.designer.vb">
+      <DependentUpon>SummaryPerBMAnnual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\SummaryPerBMAnnual.aspx.vb">
+      <DependentUpon>SummaryPerBMAnnual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\SummaryPerGroupBranch.aspx.designer.vb">
+      <DependentUpon>SummaryPerGroupBranch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\SummaryPerGroupBranch.aspx.vb">
+      <DependentUpon>SummaryPerGroupBranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\WeeklyActivity.aspx.designer.vb">
+      <DependentUpon>WeeklyActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\WeeklyActivity.aspx.vb">
+      <DependentUpon>WeeklyActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\WeeklyActivityView.aspx.designer.vb">
+      <DependentUpon>WeeklyActivityView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PotentialAccount\WeeklyActivityView.aspx.vb">
+      <DependentUpon>WeeklyActivityView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\ReportViewer.aspx.designer.vb">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\ReportViewer.aspx.vb">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Review\BankProduct.aspx.designer.vb">
+      <DependentUpon>BankProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Review\BankProduct.aspx.vb">
+      <DependentUpon>BankProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Review\Branches.aspx.designer.vb">
+      <DependentUpon>Branches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Review\Branches.aspx.vb">
+      <DependentUpon>Branches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Review\BranchManager.aspx.designer.vb">
+      <DependentUpon>BranchManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Review\BranchManager.aspx.vb">
+      <DependentUpon>BranchManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Review\Dates.aspx.designer.vb">
+      <DependentUpon>Dates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Review\Dates.aspx.vb">
+      <DependentUpon>Dates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Review\GroupHeads.aspx.designer.vb">
+      <DependentUpon>GroupHeads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Review\GroupHeads.aspx.vb">
+      <DependentUpon>GroupHeads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Review\Groups.aspx.designer.vb">
+      <DependentUpon>Groups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Review\Groups.aspx.vb">
+      <DependentUpon>Groups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Review\Industries.aspx.designer.vb">
+      <DependentUpon>Industries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Review\Industries.aspx.vb">
+      <DependentUpon>Industries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Review\OtherParameters.aspx.designer.vb">
+      <DependentUpon>OtherParameters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Review\OtherParameters.aspx.vb">
+      <DependentUpon>OtherParameters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Review\OtherTables.aspx.vb">
+      <DependentUpon>OtherTables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Review\RelationshipOfficer.aspx.designer.vb">
+      <DependentUpon>RelationshipOfficer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Review\RelationshipOfficer.aspx.vb">
+      <DependentUpon>RelationshipOfficer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\SummaryPerRegion\Annual_YTD.aspx.designer.vb">
+      <DependentUpon>Annual_YTD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SummaryPerRegion\Annual_YTD.aspx.vb">
+      <DependentUpon>Annual_YTD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\SummaryPerRegion\Monthly.aspx.designer.vb">
+      <DependentUpon>Monthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SummaryPerRegion\Monthly.aspx.vb">
+      <DependentUpon>Monthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\SummaryPerRegion\Weekly.aspx.designer.vb">
+      <DependentUpon>Weekly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SummaryPerRegion\Weekly.aspx.vb">
+      <DependentUpon>Weekly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\TargetMarket\CreateNewClient.aspx.designer.vb">
+      <DependentUpon>CreateNewClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TargetMarket\CreateNewClient.aspx.vb">
+      <DependentUpon>CreateNewClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\TargetMarket\SearchTargetMarket.aspx.designer.vb">
+      <DependentUpon>SearchTargetMarket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TargetMarket\SearchTargetMarket.aspx.vb">
+      <DependentUpon>SearchTargetMarket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\TargetMarket\UpdateClient.aspx.designer.vb">
+      <DependentUpon>UpdateClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TargetMarket\UpdateClient.aspx.vb">
+      <DependentUpon>UpdateClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\TargetMarket\UpdateClientDetails.aspx.designer.vb">
+      <DependentUpon>UpdateClientDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TargetMarket\UpdateClientDetails.aspx.vb">
+      <DependentUpon>UpdateClientDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Site.Master" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-grid.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-grid.min.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-grid.rtl.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-reboot.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-utilities.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-utilities.min.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap.min.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap.rtl.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\css\bootstrap.rtl.min.css.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\brands.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\fontawesome.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\regular.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\solid.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\v4-shims.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_animated.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_bordered-pulled.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_core.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_fixed-width.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_icons.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_larger.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_list.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_mixins.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_rotated-flipped.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_screen-reader.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_shims.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_stacked.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\less\_variables.less" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\metadata\categories.yml" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\metadata\icons.json" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\metadata\icons.yml" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\metadata\shims.json" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\metadata\shims.yml" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\metadata\sponsors.yml" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\brands.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\fontawesome.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\regular.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\solid.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\v4-shims.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_animated.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_bordered-pulled.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_core.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_fixed-width.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_icons.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_larger.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_list.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_mixins.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_rotated-flipped.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_screen-reader.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_shims.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_stacked.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\scss\_variables.scss" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-brands-400.eot" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-brands-400.ttf" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-brands-400.woff" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-brands-400.woff2" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-regular-400.eot" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-regular-400.ttf" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-regular-400.woff" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-regular-400.woff2" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-solid-900.eot" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-solid-900.ttf" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-solid-900.woff" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\fonts\webfonts\fa-solid-900.woff2" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.bundle.js.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.esm.js.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.esm.min.js.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.js.map" />
+    <None Include="Content\Styles\bootstrap-5.2.0-dist\js\bootstrap.min.js.map" />
+    <None Include="Content\Styles\Font\Lato-Black.ttf" />
+    <None Include="Content\Styles\Font\Lato-BlackItalic.ttf" />
+    <None Include="Content\Styles\Font\Lato-Bold.ttf" />
+    <None Include="Content\Styles\Font\Lato-BoldItalic.ttf" />
+    <None Include="Content\Styles\Font\Lato-Italic.ttf" />
+    <None Include="Content\Styles\Font\Lato-Light.ttf" />
+    <None Include="Content\Styles\Font\Lato-LightItalic.ttf" />
+    <None Include="Content\Styles\Font\Lato-Regular.ttf" />
+    <None Include="Content\Styles\Font\Lato-Thin.ttf" />
+    <None Include="Content\Styles\Font\Lato-ThinItalic.ttf" />
+    <None Include="Content\Styles\images\Thumbs.db" />
+    <Content Include="ExternalConfigs\Messages.config" />
+    <Content Include="ExternalConfigs\PageControlVariables.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Master\Login.Master" />
+    <Content Include="ExternalConfigs\Commons.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Views\Reports\RDLCFiles\PARevisits_WeeklySummaryReport.rdlc" />
+    <EmbeddedResource Include="Views\Reports\RDLCFiles\PotentialAccountReports.rdlc" />
+    <EmbeddedResource Include="Views\Reports\RDLCFiles\UsersList.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\AnnuallySummaryReport.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\AnnualSummary.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\AnnualSummaryPerBranch.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\ChangeInPotentialAccounts.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\MonthlySummaryReport.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\NewLeads_WeeklySummaryReport.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\SummaryPerBranch.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\SummaryPerGroupBranchReport.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\SummaryPerGroup_CASAReport.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\SummaryPerGroup_LoansReport.rdlc" />
+    <Content Include="Views\Reports\RDLCFiles\WeeklyActivity.rdlc" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DataObjects\LBP.VS2010.BSMS.DataObjects.vbproj">
+      <Project>{ED7EAAFC-8C17-4F55-B4AF-FC3A0D729764}</Project>
+      <Name>LBP.VS2010.BSMS.DataObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UCPBCustomValidators\LBP.VS2010.BSMS.CustomValidators.vbproj">
+      <Project>{1A55A0EF-F5A9-4A8F-A888-6CF473FB6937}</Project>
+      <Name>LBP.VS2010.BSMS.CustomValidators</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\LBP.VS2010.BSMS.Utilities.vbproj">
+      <Project>{0D812AAB-237F-4D37-8141-F8FEC0B95570}</Project>
+      <Name>LBP.VS2010.BSMS.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v16.0\WebApplications\Microsoft.WebApplication.targets" Condition="true" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50635</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

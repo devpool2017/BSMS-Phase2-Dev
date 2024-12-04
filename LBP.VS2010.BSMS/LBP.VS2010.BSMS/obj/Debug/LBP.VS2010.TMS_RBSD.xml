@@ -1,0 +1,857 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LBP.VS2010.TMS_RBSD
+</name>
+</assembly>
+<members>
+<member name="F:LBP.VS2010.TMS_RBSD.Site.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.litTitle">
+	<summary>
+litTitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.Link1">
+	<summary>
+Link1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.HeadContent">
+	<summary>
+HeadContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.frmMaster">
+	<summary>
+frmMaster control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.lblSystemName">
+	<summary>
+lblSystemName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.lblUserFullName">
+	<summary>
+lblUserFullName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.lblRoleName">
+	<summary>
+lblRoleName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.lblDateToday">
+	<summary>
+lblDateToday control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.lnkLogout">
+	<summary>
+lnkLogout control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.sidebar">
+	<summary>
+sidebar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.rptMenu">
+	<summary>
+rptMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.lbpSm">
+	<summary>
+lbpSm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.upd1">
+	<summary>
+upd1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.siteHeader">
+	<summary>
+siteHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.btnBreadCrumbIcon">
+	<summary>
+btnBreadCrumbIcon control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.lblBreadCrumb">
+	<summary>
+lblBreadCrumb control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Site.MainContent">
+	<summary>
+MainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Welcome.lblDisplayName">
+	<summary>
+lblDisplayName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Welcome.pWelcomeMsg">
+	<summary>
+pWelcomeMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Oops.errPage">
+	<summary>
+errPage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Oops.Link1">
+	<summary>
+Link1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Oops.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Oops.litSystemErr">
+	<summary>
+litSystemErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.SystemMaintenanceReportTab.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.SystemMaintenanceReportTab.navRepeater">
+	<summary>
+navRepeater control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.SystemMaintenanceReportTab.mainContent">
+	<summary>
+mainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.lblSystemName">
+	<summary>
+lblSystemName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.pnlLog">
+	<summary>
+pnlLog control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.txtUsername">
+	<summary>
+txtUsername control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.txtPassword">
+	<summary>
+txtPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.btnUnlock">
+	<summary>
+btnUnlock control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.lnkHelp">
+	<summary>
+lnkHelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.lblErrorMsg">
+	<summary>
+lblErrorMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.lblDisclaimer">
+	<summary>
+lblDisclaimer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.modalSuccess">
+	<summary>
+modalSuccess control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.modalHelp">
+	<summary>
+modalHelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Unlock.btnSuccessOK">
+	<summary>
+btnSuccessOK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.lblSystemName">
+	<summary>
+lblSystemName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.pnlLog">
+	<summary>
+pnlLog control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.txtUsername">
+	<summary>
+txtUsername control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.txtPassword">
+	<summary>
+txtPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.txtNewPassword">
+	<summary>
+txtNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.txtConfirmPassword">
+	<summary>
+txtConfirmPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.lnkHelp">
+	<summary>
+lnkHelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.btnSubmit">
+	<summary>
+btnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.btnBack">
+	<summary>
+btnBack control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.lblErrorMsg">
+	<summary>
+lblErrorMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.lblDisclaimer">
+	<summary>
+lblDisclaimer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.modalHelp">
+	<summary>
+modalHelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.devHelp">
+	<summary>
+devHelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.deployedHelp">
+	<summary>
+deployedHelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.Button2">
+	<summary>
+Button2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.at">
+	<summary>
+at control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.supportEmail">
+	<summary>
+supportEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ChangePassword.btnSuccessOK">
+	<summary>
+btnSuccessOK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.pnlLog">
+	<summary>
+pnlLog control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.lblSystemName">
+	<summary>
+lblSystemName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.txtUsername">
+	<summary>
+txtUsername control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.txtPassword">
+	<summary>
+txtPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.btnLogin">
+	<summary>
+btnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.btnReset">
+	<summary>
+btnReset control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.lnkHelp">
+	<summary>
+lnkHelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.lblErrorMsg">
+	<summary>
+lblErrorMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.lblDisclaimer">
+	<summary>
+lblDisclaimer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.modalHelp">
+	<summary>
+modalHelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.devHelp">
+	<summary>
+devHelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.deployedHelp">
+	<summary>
+deployedHelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.Button2">
+	<summary>
+Button2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.at">
+	<summary>
+at control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.supportEmail">
+	<summary>
+supportEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login.btnSuccessOK">
+	<summary>
+btnSuccessOK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login2.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login2.litTitle">
+	<summary>
+litTitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login2.Link1">
+	<summary>
+Link1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login2.HeadContent">
+	<summary>
+HeadContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login2.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login2.loginSM">
+	<summary>
+loginSM control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Login2.loginMainContent">
+	<summary>
+loginMainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ProblemManagementReportMaster.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ProblemManagementReportMaster.navRepeater">
+	<summary>
+navRepeater control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ProblemManagementReportMaster.lblPMRCode">
+	<summary>
+lblPMRCode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ProblemManagementReportMaster.lblPMRStatus">
+	<summary>
+lblPMRStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ProblemManagementReportMaster.mainContent">
+	<summary>
+mainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:LBP.VS2010.TMS_RBSD.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:LBP.VS2010.TMS_RBSD.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:LBP.VS2010.TMS_RBSD.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:LBP.VS2010.TMS_RBSD.My.MyWebExtension.Application">
+	<summary>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:LBP.VS2010.TMS_RBSD.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:LBP.VS2010.TMS_RBSD.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:LBP.VS2010.TMS_RBSD.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:LBP.VS2010.TMS_RBSD.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:LBP.VS2010.TMS_RBSD.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:LBP.VS2010.TMS_RBSD.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:LBP.VS2010.TMS_RBSD.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.Logout.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ACRFTab.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ACRFTab.navRepeater">
+	<summary>
+navRepeater control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ACRFTab.lblACRFNo">
+	<summary>
+lblACRFNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ACRFTab.lblStatus">
+	<summary>
+lblStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ACRFTab.mainContent">
+	<summary>
+mainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ExpiredSession.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ExpiredSession.litTitle">
+	<summary>
+litTitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ExpiredSession.Link1">
+	<summary>
+Link1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ExpiredSession.frmError1">
+	<summary>
+frmError1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ExpiredSession.litSystem">
+	<summary>
+litSystem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ReportViewer.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ReportViewer.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LBP.VS2010.TMS_RBSD.ReportViewer.rptReport">
+	<summary>
+rptReport control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

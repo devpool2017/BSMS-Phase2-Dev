@@ -1,0 +1,10 @@
+D:\_________ITDJTC_DomainAccount\Projects\LPB_Net_NewTemplate\LBP_.NET_project_template\LBP.VS2010.New.Template\Utilities\bin\Debug\LBP.VS2010.New.Template.Utilities.dll
+D:\_________ITDJTC_DomainAccount\Projects\LPB_Net_NewTemplate\LBP_.NET_project_template\LBP.VS2010.New.Template\Utilities\bin\Debug\LBP.VS2010.New.Template.Utilities.pdb
+D:\_________ITDJTC_DomainAccount\Projects\LPB_Net_NewTemplate\LBP_.NET_project_template\LBP.VS2010.New.Template\Utilities\bin\Debug\LBP.VS2010.New.Template.Utilities.xml
+D:\_________ITDJTC_DomainAccount\Projects\LPB_Net_NewTemplate\LBP_.NET_project_template\LBP.VS2010.New.Template\Utilities\obj\Debug\LBP.VS2010.New.Template.Utilities.vbprojAssemblyReference.cache
+D:\_________ITDJTC_DomainAccount\Projects\LPB_Net_NewTemplate\LBP_.NET_project_template\LBP.VS2010.New.Template\Utilities\obj\Debug\LBP.VS2010.New.Template.Utilities.Resources.resources
+D:\_________ITDJTC_DomainAccount\Projects\LPB_Net_NewTemplate\LBP_.NET_project_template\LBP.VS2010.New.Template\Utilities\obj\Debug\LBP.VS2010.New.Template.Utilities.vbproj.GenerateResource.cache
+D:\_________ITDJTC_DomainAccount\Projects\LPB_Net_NewTemplate\LBP_.NET_project_template\LBP.VS2010.New.Template\Utilities\obj\Debug\LBP.VS2010.New.Template.Utilities.vbproj.CoreCompileInputs.cache
+D:\_________ITDJTC_DomainAccount\Projects\LPB_Net_NewTemplate\LBP_.NET_project_template\LBP.VS2010.New.Template\Utilities\obj\Debug\LBP.VS2010.New.Template.Utilities.dll
+D:\_________ITDJTC_DomainAccount\Projects\LPB_Net_NewTemplate\LBP_.NET_project_template\LBP.VS2010.New.Template\Utilities\obj\Debug\LBP.VS2010.New.Template.Utilities.xml
+D:\_________ITDJTC_DomainAccount\Projects\LPB_Net_NewTemplate\LBP_.NET_project_template\LBP.VS2010.New.Template\Utilities\obj\Debug\LBP.VS2010.New.Template.Utilities.pdb

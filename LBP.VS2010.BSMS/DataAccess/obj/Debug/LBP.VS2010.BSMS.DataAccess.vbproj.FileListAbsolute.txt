@@ -1,0 +1,36 @@
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.TMS_RBSD\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.vbprojResolveAssemblyReference.cache
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.TMS_RBSD\DataAccess\obj\Debug\LBP.VS2010.TMS_RBSD.DataAccess.Resources.resources
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.TMS_RBSD\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.vbproj.GenerateResource.Cache
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.TMS_RBSD\DataAccess\obj\Debug\LBP.VS2010.TMS_RBSD.DataAccess.dll
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.TMS_RBSD\DataAccess\obj\Debug\LBP.VS2010.TMS_RBSD.DataAccess.xml
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.TMS_RBSD\DataAccess\obj\Debug\LBP.VS2010.TMS_RBSD.DataAccess.pdb
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.DataAccess.dll
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.DataAccess.pdb
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.DataAccess.xml
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.Utilities.dll
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.LBPCryptography.dll
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.WebCryptor.dll
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.Utilities.pdb
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.Utilities.xml
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.vbprojResolveAssemblyReference.cache
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.Resources.resources
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.vbproj.GenerateResource.Cache
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.dll
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.xml
+C:\Users\itdncp\Downloads\20231031\20231031\Solution\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.pdb
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.DataAccess.dll
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.DataAccess.pdb
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.DataAccess.xml
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.Utilities.dll
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.LBPCryptography.dll
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.WebCryptor.dll
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.Utilities.pdb
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\bin\Debug\LBP.VS2010.BSMS.Utilities.xml
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.vbprojAssemblyReference.cache
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.Resources.resources
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.vbproj.GenerateResource.cache
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.vbproj.CoreCompileInputs.cache
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.vbproj.CopyComplete
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.dll
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.xml
+D:\WFH 2023\Projects\Solution\BSMS_UAT\BSMS_UAT\BSMS_UAT\LBP.VS2010.BSMS\DataAccess\obj\Debug\LBP.VS2010.BSMS.DataAccess.pdb
