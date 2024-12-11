@@ -3,6 +3,20 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <script src="/Content/Scripts/PageScripts/AdminTools/DatabaseAuditLog.js" type="text/javascript"></script>
+    <style type="text/css">
+        .auto-style1 {
+            width: 21%;
+        }
+        .auto-style2 {
+            width: 11%;
+        }
+        .auto-style3 {
+            width: 12%;
+        }
+        .auto-style4 {
+            width: 16%;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div id="frmHorizontal" class="well">
@@ -14,7 +28,7 @@
                 <div class="col-sm-4">
                     <select id="ddlSearchBy" class="form-select form-select-sm hardcodedSelect">
                         <option value="All">All</option>
-                        <option value="DomainID">Domain ID</option>
+                        <option value="UserID">User ID</option>
                         <option value="TableName">Table Name</option>
                         <option value="ActionType">Action Type</option>
                         <option value="AuditTrailDate">Date</option>
@@ -32,25 +46,25 @@
             <table id="tblAuditTrail" class="table table-sm" align="center">
                 <thead class="noScrollFixedHeader">
                     <tr valign="middle" align="center">
-                        <th align="center" valign="middle" width="12%" data-name="DomainID" data-alignment="center"
-                            data-columnname="Domain ID">Domain ID
+                        <th align="center" valign="middle" width="12%" data-name="UserID" data-alignment="center"
+                            data-columnname="User ID">User ID
                         </th>
-                        <th align="center" valign="middle" width="19%" data-name="AuditTrailDate" data-alignment="center"
+                        <th align="center" valign="middle" data-name="AuditTrailDate" data-alignment="center"
                             data-columnname="Audit Trail Date">Audit Trail Date
                         </th>
-                        <th align="center" valign="middle" width="15%" data-name="TableName" data-alignment="center"
+                        <th align="center" valign="middle" data-name="TableName" data-alignment="center"
                             data-columnname="Table Name">Table Name
                         </th>
-                        <th align="center" valign="middle" width="30%" data-name="ColumnAffected" data-alignment="center"
+                        <th align="center" valign="middle" data-name="ColumnAffected" data-alignment="center"
                             data-columnname="Column Affected">Column Affected
                         </th>
-                        <th align="center" valign="middle" width="10%" data-name="ActionType" data-alignment="center"
+                        <th align="center" valign="middle" data-name="ActionType" data-alignment="center"
                             data-columnname="Action Type">Action Type
                         </th>
-                        <th align="center" valign="middle" width="20%" data-name="ColumnFrom" data-alignment="center"
+                        <th align="center" valign="middle" data-name="ColumnFrom" data-alignment="center"
                             data-columnname="Column From">Column From
                         </th>
-                        <th align="center" valign="middle" width="20%" data-name="ColumnTo" data-alignment="center"
+                        <th align="center" valign="middle" data-name="ColumnTo" data-alignment="center"
                             data-columnname="Column To">Column To
                         </th>
                     </tr>

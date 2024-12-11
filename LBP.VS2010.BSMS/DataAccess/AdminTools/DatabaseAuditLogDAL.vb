@@ -21,7 +21,7 @@
         Dim dt As New DataTable
         Try
             With Me
-                .AddInputParam("@DomainID", IIf(DomainID = "", DBNull.Value, DomainID))
+                .AddInputParam("@Username", IIf(DomainID = "", DBNull.Value, DomainID))
                 .AddInputParam("@TableName", IIf(TableName = "", DBNull.Value, TableName))
                 .AddInputParam("@ActionType", IIf(ActionType = "", DBNull.Value, ActionType))
                 .AddInputParam("@Date", IIf(AuditTrailDate = "", DBNull.Value, AuditTrailDate))

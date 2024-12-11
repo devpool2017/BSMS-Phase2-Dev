@@ -14,8 +14,8 @@ function loadAuditTrail() {
     param.searchBy = getDropdownValue("ddlSearchBy")
 
     switch (param.searchBy) {
-        case "DomainID":
-            param.DomainID = getTextboxValue("txtSearchValue");
+        case "UserID":
+            param.UserID = getTextboxValue("txtSearchValue");
             break;
         case "TableName":
             param.TableName = getTextboxValue("txtSearchValue");

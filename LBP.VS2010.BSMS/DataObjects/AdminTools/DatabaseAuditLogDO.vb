@@ -13,10 +13,10 @@ Public Class DatabaseAuditLogDO
     End Sub
 #End Region
 
-    <DisplayLabel("Domain ID")>
+    <DisplayLabel("User ID")>
     <RequiredField()>
-    <DataColumnMapping("DomainID")>
-    Property DomainID As String
+    <DataColumnMapping("UserID")>
+    Property UserID As String
 
     <DisplayLabel("Date")>
     <RequiredField()>
@@ -57,7 +57,7 @@ Public Class DatabaseAuditLogDO
 
                 For Each row As DataRow In dt.Rows
                     lst.Add(New DatabaseAuditLogDO With {
-                            .DomainID = row.Item("DomainID").ToString,
+                            .UserID = row.Item("UserID").ToString,
                             .AuditTrailDate = row.Item("AuditTrailDate").ToString,
                             .TableName = row.Item("TableName").ToString,
                             .ColumnAffected = row.Item("ColumnAffected").ToString,

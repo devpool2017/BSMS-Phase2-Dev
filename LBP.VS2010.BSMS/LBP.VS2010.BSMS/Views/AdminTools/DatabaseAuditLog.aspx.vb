@@ -17,13 +17,13 @@ Public Class AuditLog
     Public Shared Function LoadAuditTrail(ByVal param As DatabaseAuditLogDO)
         param.isSuccess = True
 
-        If Not param.SearchBy = "All" Then
+        If Not (param.SearchBy = "All") Then
             If Not param.validateProperty(param.SearchBy) Then
                 param.isSuccess = False
                 Return param
             End If
         End If
 
-        Return DatabaseAuditLogDO.ListAuditTrail(param.DomainID, param.TableName, param.ActionType, param.AuditTrailDate)
+        Return DatabaseAuditLogDO.ListAuditTrail(param.UserID, param.TableName, param.ActionType, param.AuditTrailDate)
     End Function
 End Class

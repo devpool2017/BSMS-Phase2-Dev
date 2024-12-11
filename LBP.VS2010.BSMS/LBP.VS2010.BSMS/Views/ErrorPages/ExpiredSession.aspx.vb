@@ -7,6 +7,7 @@ Public Class ExpiredSession
         litTitle.Text = GetSection("Commons")("SystemName").ToString() + " - Expired Session"
         litSystem.Text = GetSection("Commons")("SystemName").ToString()
         Session.Clear()
+        HttpContext.Current.Session.RemoveAll()
     End Sub
 
 End Class
