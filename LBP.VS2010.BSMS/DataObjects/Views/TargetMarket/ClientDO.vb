@@ -776,7 +776,12 @@ Public Class ClientDO
         Dim dal As New ClientDAL
         Dim dt As DataTable = dal.GetWeekNum(leadDate)
 
-        Return IIf((dt.Rows(0).Item("WeekNumber").ToString <> ""), dt.Rows(0).Item("WeekNumber"), "")
+        If dt.Rows.Count > 0 Then
+            Return IIf((dt.Rows(0).Item("WeekNumber").ToString <> ""), dt.Rows(0).Item("WeekNumber"), "")
+        Else
+            Return String.Empty
+        End If
+
     End Function
 
 #End Region

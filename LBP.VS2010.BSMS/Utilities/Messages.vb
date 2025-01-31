@@ -128,6 +128,8 @@ Public Class Messages
                 INV_USER_TARGET
                 ADD_DETAILS
 
+                IS_EXISTS2
+
             End Enum
 
             Shared Function getErrorMessage(ByVal errorType As ErrorMessages.Validation.ErrorType, ByVal field As String, ByVal args As String()) As String
@@ -507,6 +509,12 @@ Public Class Messages
                         errorMessage = ConfigurationManager.GetSection("Messages")("MessageErrorAddDetails")
 
                         errorMessage = errorMessage.Replace((System.Configuration.ConfigurationManager.GetSection("Messages")("PlaceholderFieldName")), field)
+
+                    Case ErrorMessages.Validation.ErrorType.IS_EXISTS2
+                        errorMessage = ConfigurationManager.GetSection("Messages")("MessageErrorExists2")
+
+                        errorMessage = errorMessage.Replace((System.Configuration.ConfigurationManager.GetSection("Messages")("PlaceholderFieldName")), field)
+                        errorMessage = errorMessage.Replace((System.Configuration.ConfigurationManager.GetSection("Messages")("PlaceholderFieldValue")), args(0))
                 End Select
 
                 Return errorMessage

@@ -407,6 +407,39 @@ Public Class ReportViewer
                     .Refresh()
                 End With
 
+            Case "IndustryList_Report"
+                Dim obj As New IndustriesDO
+
+                Dim ds As New DataSet
+                Dim dt As New DataTable
+
+                Dim params As IndustriesDO = HttpContext.Current.Session("currentIndustryParameter")
+
+                Dim status As String = Nothing
+                If Not IsNothing(params.Status) Then
+                    If params.Status.Equals("1") Then
+                        status = "Approved"
+                    ElseIf params.Status.Equals("2") Then
+                        status = "For Approval"
+                    End If
+                End If
+
+                With rptReport.LocalReport
+                    .DataSources.Clear()
+                    .ReportPath = GetSection("Commons")("ReportPath") & GetSection("Commons")("IndustryListReport")
+                    .SetParameters(New List(Of ReportParameter) From {
+                        New ReportParameter("SearchText", params.SearchBy),
+                        New ReportParameter("FilterStatus", status)
+                    })
+
+                    dt = obj.GetIndustryListReport(params.SearchBy, params.Status)
+                    dt.TableName = "DataSet1" 'datasets
+                    ds.Tables.Add(dt)
+                    .DataSources.Add(New ReportDataSource(dt.TableName, dt))
+                    .Refresh()
+
+                End With
+
         End Select
 
         rptReport.Visible = True

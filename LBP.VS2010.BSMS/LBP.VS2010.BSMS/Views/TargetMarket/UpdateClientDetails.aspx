@@ -57,7 +57,7 @@
                                 Suspect</label>
                         </div>
                         <div class="col-sm-2">
-                            <input type="text" id="txtSuspect" class="form-control form-control-sm noForwardDate1Week"
+                            <input type="text" id="txtSuspect" class="lbpControl form-control form-control-sm noForwardDate1Week"
                                 placeholder="Date" autocomplete="off" readonly="readonly" />
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                                 Prospect</label>
                         </div>
                         <div class="col-sm-2">
-                            <input type="text" id="txtProspect" class="form-control form-control-sm noForwardDate1Week"
+                            <input type="text" id="txtProspect" class="lbpControl form-control form-control-sm noForwardDate1Week"
                                 placeholder="Date" autocomplete="off" readonly="readonly" />
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                                  Visited</label>
                         </div>
                         <div class="col-sm-1">
-                            <input type="text" id="txtVisits" class="form-control form-control-sm wholenum" maxlength='<%#getFieldLength(FieldVariables.CLIENT_VISITS, LengthSetting.MAX)%>'
+                            <input type="text" id="txtVisits" class="lbpControl form-control form-control-sm wholenum" maxlength='<%#getFieldLength(FieldVariables.CLIENT_VISITS, LengthSetting.MAX)%>'
                                 readonly="readonly" value="0" />
                         </div>
                     </div>
