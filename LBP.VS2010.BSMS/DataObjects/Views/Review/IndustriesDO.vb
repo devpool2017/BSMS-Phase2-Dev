@@ -60,6 +60,7 @@ Public Class IndustriesDO
     Property UserID As String
 
     Property InEdit As Boolean
+    Property InUse As Boolean
 #End Region
 
 #Region "MISC COLUMNS"
@@ -172,6 +173,7 @@ Public Class IndustriesDO
                     .IndustryType = dt.Rows(0)("IndustryType").ToString
                     .Status = dt.Rows(0)("Status").ToString
                     .InEdit = IIf(dt.Rows(0)("InEdit") = "1", True, False)
+                    .InUse = IIf(dt.Rows(0)("InUse") = "1", True, False)
                     .TempStatusID = dt.Rows(0)("TempStatusID").ToString
                 End With
             End If

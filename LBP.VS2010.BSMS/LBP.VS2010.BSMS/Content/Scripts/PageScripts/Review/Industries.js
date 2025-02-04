@@ -59,10 +59,10 @@
                 toggleEventForElement('#btnReject', 'click', AJAXWrapPageMethodCall, true, 'rejectIndustry');
 
             }
-            else {
-                var element = document.getElementById('acc-UsersTemp');
-                element.parentNode.removeChild(element);
-            }
+//            else {
+//                var element = document.getElementById('acc-UsersTemp');
+//                element.parentNode.removeChild(element);
+//            }
 
             var modalIndustry = document.getElementById('modalIndustry');
 
@@ -220,7 +220,7 @@ async function deleteIndustry(industryCode) {
     try {
         var result = await getDetails(industryCode, null)
 
-        if (!result.InEdit) {
+        if (!result.InEdit && !result.InUse) {
 
             result.Action = 'delete';
 
@@ -245,7 +245,7 @@ async function deleteIndustry(industryCode) {
             });
         }
         else {
-            showError('Industry is in use, it cannot be deleted.');
+            showError('Industry is in use/for approval, it cannot be deleted.');
         }
     } catch (e) {
         showError(e);
