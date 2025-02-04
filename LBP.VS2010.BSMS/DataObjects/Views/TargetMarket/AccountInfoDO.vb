@@ -196,7 +196,7 @@ Public Class AccountInfoDO
         Dim success As Boolean = True
 
         If Boolean.Parse(CASAType) And String.IsNullOrWhiteSpace(CASATypesAvailed) Then
-            errMsg += Messages.ErrorMessages.Validation.getErrorMessage(Messages.ErrorMessages.Validation.ErrorType.ADD_DETAILS, "account number", {"1"}) + "<br/>"
+            errMsg += Messages.ErrorMessages.Validation.getErrorMessage(Messages.ErrorMessages.Validation.ErrorType.NOTHING_SELECTED, fieldLabel, {Nothing}) + "<br/>"
             success = False
         End If
 
